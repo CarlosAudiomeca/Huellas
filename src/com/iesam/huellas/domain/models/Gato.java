@@ -1,6 +1,6 @@
 package com.iesam.huellas.domain.models;
 
-public class Cat extends Animal{
+public class Gato extends Animal{
 
     private Boolean leucemiaFelina;
 

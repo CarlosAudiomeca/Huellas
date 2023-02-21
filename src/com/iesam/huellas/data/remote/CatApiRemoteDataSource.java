@@ -1,7 +1,7 @@
 package com.iesam.huellas.data.remote;
 
 import com.iesam.huellas.app.api.ApiClient;
-import com.iesam.huellas.domain.models.Cat;
+import com.iesam.huellas.domain.models.Gato;
 import retrofit2.Response;
 
 import java.io.IOException;
@@ -11,9 +11,9 @@ public class CatApiRemoteDataSource {
 
     private ApiClient apiClient = new ApiClient();
 
-    public List<Cat> getCats() {
+    public List<Gato> getCats() {
         try {
-            Response<List<Cat>> responseCats = apiClient.apiService.getCats().execute();
+            Response<List<Gato>> responseCats = apiClient.apiService.getCats().execute();
             if (responseCats.isSuccessful()) {
                 return responseCats.body();
             } else {
